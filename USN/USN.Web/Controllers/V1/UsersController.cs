@@ -22,5 +22,11 @@ namespace USN.Web.Controllers.V1
         {
             return Ok();
         }
+
+        [HttpGet("{id}/friends")]
+        public IActionResult GetUserFriends(int id, int page)
+        {
+            return Ok();
+        }
     }
 }
