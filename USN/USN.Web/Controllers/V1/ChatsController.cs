@@ -27,7 +27,7 @@ namespace USN.Web.Controllers.V1
             return Ok();
         }
 
-        [HttpGet]
+        [HttpGet("my")]
         public IActionResult GetChats(int page = 1)
         {
             return Ok();
@@ -40,7 +40,6 @@ namespace USN.Web.Controllers.V1
         }
 
         #endregion
-
 
         #region Members
 
@@ -75,7 +74,6 @@ namespace USN.Web.Controllers.V1
         }
 
         #endregion
-
 
         #region Messages
 
