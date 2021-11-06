@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using System;
+using USN.Web.Middlewares;
 
 namespace USN.Web
 {
@@ -48,6 +49,8 @@ namespace USN.Web
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "USN.Web v1"));
             }
+            app.UseMiddleware<GlobalErrorHandlerMiddleware>();
+            app.UseMiddleware<AccessTokenMiddleware>();
 
             app.UseWebSockets();
 
