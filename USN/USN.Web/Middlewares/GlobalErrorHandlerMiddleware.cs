@@ -1,7 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using System;
-using System.Net;
-using System.Threading.Tasks;
+﻿using System.Net;
+
 namespace USN.Web.Middlewares
 {
     public class GlobalErrorHandlerMiddleware

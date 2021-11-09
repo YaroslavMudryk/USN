@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using System.Threading.Tasks;
-
-namespace USN.Web.Middlewares
+﻿namespace USN.Web.Middlewares
 {
     public class AccessTokenMiddleware
     {
